@@ -4,6 +4,8 @@ import {
   TbMapPin, TbClipboardList, TbFileInvoice,
 } from "react-icons/tb";
 
+export const sidebarItems2 = [];
+
 export const sidebarItems = [
   { text: "Inicio", icon: <TbSmartHome className="w-5 h-5" />, alert: false, path: "/inicio" },
   { text: "Operaciones", icon: <TbPackages className="w-5 h-5 text-orange-500" />, alert: false, path: "/operaciones" },
