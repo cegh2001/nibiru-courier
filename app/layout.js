@@ -1,5 +1,5 @@
 import { Inter, Outfit } from "next/font/google";
-import { CoreProvider } from "@/core/CoreProvider";
+import { CoreProvider } from "@/core/components/CoreProvider";
 import { ThemeFoucHandler } from "@/components/common/ThemeFoucHandler";
 import "./globals.css";
 
