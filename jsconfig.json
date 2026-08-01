@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./*"],
+      "@/shared/*": ["./src/shared/*"],
+      "@/components/*": ["./src/shared/components/*"],
+      "@/core/*": ["./src/shared/core/*"],
+      "@/hooks/*": ["./src/shared/hooks/*"],
+      "@/layouts/*": ["./src/shared/layouts/*"],
+      "@/lib/*": ["./src/shared/lib/*"],
+      "@/services/*": ["./src/shared/services/*"],
+      "@/modules/*": ["./src/modules/*"]
+    }
+  }
+}

@@ -1,0 +1,47 @@
+/* HeavenLite.css - Versión optimizada de Heaven */
+
+/* Animaciones de nubes suaves - solo transform y opacity (GPU-accelerated) */
+@keyframes cloud-drift {
+
+  0%,
+  100% {
+    transform: translateX(0) translateY(0);
+    opacity: 0.7;
+  }
+
+  50% {
+    transform: translateX(10px) translateY(-5px);
+    opacity: 0.9;
+  }
+}
+
+@keyframes cloud-drift-reverse {
+
+  0%,
+  100% {
+    transform: translateX(0) translateY(0);
+    opacity: 0.6;
+  }
+
+  50% {
+    transform: translateX(-10px) translateY(-3px);
+    opacity: 0.8;
+  }
+}
+
+.cloud-drift {
+  animation: cloud-drift 8s ease-in-out infinite;
+}
+
+.cloud-drift-reverse {
+  animation: cloud-drift-reverse 10s ease-in-out infinite;
+}
+
+/* Respeta preferencias de movimiento reducido */
+@media (prefers-reduced-motion: reduce) {
+
+  .cloud-drift,
+  .cloud-drift-reverse {
+    animation: none !important;
+  }
+}
